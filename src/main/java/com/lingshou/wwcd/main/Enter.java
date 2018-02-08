@@ -3,6 +3,7 @@ package com.lingshou.wwcd.main;
 import com.lingshou.wwcd.builder.MyThreadBuilder;
 import com.lingshou.wwcd.worker.MyThread;
 
+import java.util.Objects;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
@@ -28,7 +29,7 @@ public class Enter {
 
     private static <T> T handleAndMetric(Supplier<T> supplier, int testRounds) {
         long start = System.currentTimeMillis();
-        System.out.println(String.format("testRounds:%s, time start:", testRounds, start));
+        System.out.println(String.format("testRounds:%s, time start:%s", testRounds, start));
         T t = supplier.get();
         System.out.println(String.format("testRounds:%s, end,  last:%s ms", testRounds, (System.currentTimeMillis() - start)));
         return t;
@@ -62,7 +63,16 @@ public class Enter {
     }
 
     private static void doCheck(int threadCnt, int printTimes, StringBuffer stringBuffer) {
+        String targetStr = stringBuffer.toString();
 
+        String needStr = "";
+        for (int i = 0; i < printTimes; i++) {
+            needStr += getStrByThreadCnt(threadCnt);
+        }
+
+        if (!Objects.equals(targetStr, needStr)) {
+            throw new RuntimeException("结果不正确!" + targetStr);
+        }
     }
 
     private static String getStrByThreadCnt(int threadCnt) {
