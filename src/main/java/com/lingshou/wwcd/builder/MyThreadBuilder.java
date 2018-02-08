@@ -15,7 +15,7 @@ public class MyThreadBuilder {
      */
     public static MyThread[] build(int threadCnt, StringBuffer stringBuffer, int printTimes, CountDownLatch countDownLatch) {
 
-        //todo
+        //todo create your own threads
 
         return null;
     }
