@@ -95,6 +95,9 @@ wait, notify, notifyAll
 ### ``winner winner chicken dinner!``: 咖啡机
 ![](imgs/coffee.jpeg) 
 
+### ``Thread Keeper``: 胡桃木小音箱
+![](imgs/redio.jpeg) 
+
 
 ### ``思路新奇``: 星巴克会员卡一张
 ![](imgs/card.jpeg) 
