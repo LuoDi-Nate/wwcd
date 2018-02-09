@@ -73,6 +73,16 @@ ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJ
 玩家可以使用jdk所有功能以及google的guava包, 在离网环境下, 
 做编程
 
+## hint
+
+```java
+synchronized, volatile
+
+ReentrantLock, CyclicBarrier, CountDownLatch
+
+wait, notify, notifyAll
+```
+
 ## 胜利判定
 
 * 1.程序能完成功能, 能跑过所有测试用例
