@@ -92,6 +92,9 @@ wait, notify, notifyAll
 
 ## 奖励
 
-``winner``: 咖啡机
+``winner winner chicken dinner!``: 咖啡机
+![](imgs/coffee.jpeg) 
+
 
 ``思路新奇``: 星巴克会员卡一张
+![](imgs/card.jpeg) 
